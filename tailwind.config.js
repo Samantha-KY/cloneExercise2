@@ -14,6 +14,10 @@ module.exports = {
         "blue-bright": "#02bcf5",
         "violet": "#7a73ff",
       },
+      screens: {
+        sm: { max: '800px' },
+        md: { min: '1024px' }
+      }
     },
   },
   plugins: [],

@@ -11,16 +11,16 @@
   <body class="flex flex-col items-center justify-center w-full">
     <section class="grid grid-cols-4 -z-50 fixed top bottom-0 h-screen">
       <div
-        class="border-r border-l border-dashed h-full w-[300px] border-gray-200"
+        class="border-r border-l border-dashed h-full w-[19rem] border-gray-200"
       ></div>
       <div
-        class="border-r border-dashed h-full w-[300px] border-gray-200"
+        class="border-r border-dashed h-full w-[19rem] border-gray-200"
       ></div>
       <div
-        class="border-r border-dashed h-full w-[300px] border-gray-200"
+        class="border-r border-dashed h-full w-[19rem] border-gray-200"
       ></div>
       <div
-        class="border-r border-dashed h-full w-[300px] border-gray-200"
+        class="border-r border-dashed h-full w-[19rem] border-gray-200"
       ></div>
     </section>
     <div
@@ -48,7 +48,7 @@
               ></path>
             </svg>
 
-            <div>
+            <div class="sm:hidden">
               <ul class="flex gap-5 items-center text-white font-secondary">
                 <li>Product</li>
                 <li>Solutions</li>
@@ -61,14 +61,30 @@
             <button
               class="text-white font-secondary bg-white/30 px-5 py-2 rounded-full flex justify-between items-center gap-2"
             >
-              Sign in
+              <span class="sm:hidden border-white">Sign in</span>
+              <span class="hidden sm:block">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  />
+                </svg>
+              </span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
                 strokeWidth="{1.5}"
                 stroke="currentColor"
-                class="w-6 h-4 font-extrabold"
+                class="w-6 h-4 font-extrabold sm:hidden"
               >
                 <path
                   strokeLinecap="round"
@@ -83,10 +99,10 @@
             <div class="mt-48 grid grid-cols-2">
               <div>
                 <h1
-                  class="text-[6rem] mt-14 font-extrabold leading-tight font-secondary"
+                  class="text-[5rem] mt-14 font-extrabold leading-tight font-secondary"
                 >
                   Financial <br />
-                  infrastructure for the internet
+                  infrastructure <br />for the internet
                 </h1>
                 <p class="font-secondary text-gray-500">
                   Millions of companies of all sizes—from startups to Fortune
@@ -134,7 +150,7 @@
 
               <div class="w-full h-full relative">
                 <div
-                  class="bg-white/40 absolute shadow-2xl flex gap-8 pb-8 rounded-2xl left-28 -mr-[160px] w-[70rem]"
+                  class="bg-white/40 absolute shadow-2xl flex gap-8 pb-8 rounded-2xl left-28 -mr-[10rem] w-[70rem]"
                 >
                   <div class="flex flex-col gap-1 px-3">
                     <div class="flex items-center gap-5 p-5">
@@ -178,11 +194,11 @@
                     </div>
                     <img
                       src="./assets/Capture1.PNG"
-                      class="rounded-xl shadow-lg ml-48 mb-2 h-[220px]"
+                      class="rounded-xl shadow-lg ml-48 mb-2 h-[14rem]"
                     />
                     <img
                       src="./assets/Capture2.PNG"
-                      class="rounded-xl shadow-lg ml-48 h-[220px]"
+                      class="rounded-xl shadow-lg ml-48 h-[14rem]"
                     />
                   </div>
                 </div>
@@ -504,7 +520,7 @@
       </header>
 
       <section
-        class="grid grid-cols-4 grid-rows-2 gap-y-12 max-w-6xl mx-auto my-20"
+        class="md:grid md:grid-cols-4 md:grid-rows-2 gap-y-12 max-w-6xl mx-auto my-20 grid grid-cols-2 grid-rows-4"
       >
         <img src="./assets/vectos/instactar.svg" />
         <img src="./assets/vectos/saleforce.svg" />
@@ -518,7 +534,7 @@
 
       <section class="bg-[#8d95ec]/10">
         <div
-          class="grid grid-cols-2 max-w-6xl mx-auto py-32 justify-center items-center"
+          class="md:grid md:grid-cols-2 max-w-6xl mx-auto py-32 justify-center items-center grid sm:gap-6 sm:text-base"
         >
           <div class="flex flex-col gap-9">
             <p class="text-blue font-secondary text-xl">Unified platform</p>
@@ -539,9 +555,9 @@
             </p>
 
             <button
-              class="bg-bluetext-blue w-fit text-white font-secondary font-sm px-4 py-2 rounded-full"
+              class="rounded-2xl border w-48 p-1 mt-5 bg-blue text-white font-bold text-sm hover:bg-black sm:hidden"
             >
-              Start with payement
+              Start with payments >
             </button>
           </div>
           <p class="font-secondary font-light text-gray-500">
@@ -556,6 +572,12 @@
             <a class="text-blue">manage business spend</a>,<br />
             and much more.
           </p>
+
+          <button
+            class="rounded-2xl border w-48 p-1 mt-5 bg-blue text-white font-bold text-sm hover:bg-black md:hidden"
+          >
+            Start with payments >
+          </button>
         </div>
         <section class="grid grid-cols-4 grid-rows-2 gap-9 max-w-6xl mx-auto">
           <img
@@ -586,28 +608,28 @@
           class="-skew-y-[4deg] h-[80rem] w-full bg-[#0a2540] z-40 top-0 left-0 right-0 absolute -mt-[7rem]"
         >
           <div
-            class="flex max-w-6xl mx-auto py-32 justify-center items-center mt-[10rem] skew-y-[4deg]"
+            class="flex max-w-6xl mx-auto py-32 justify-center items-center mt-[10rem] skew-y-[4deg] sm:grid"
           >
-            <div class="flex flex-col gap-9 w-full">
+            <div class="flex flex-col gap-9 w-full sm:-mt-[15rem]">
               <p class="text-blue-sky font-secondary text-xl">
-                Unified platform
+                Designed for developers
               </p>
               <h1 class="text-5xl font-secondary text-white">
-                The world’s most powerful <br />
+                The world’s most powerful<br />
                 and easy-to-use APIs
               </h1>
               <p class="font-secondary font-light text-gray-400 text-xl">
-                We agonize over the right abstractions so your teams<br />
+                We agonise over the right abstractions so your teams<br />
                 don’t need to stitch together disparate systems or<br />
                 spend months integrating payments functionality.
               </p>
 
               <button
-                class="bg-blue-skytext-blue-sky w-fit text-black font-secondary font-sm px-4 py-2 rounded-full"
+                class="rounded-2xl w-40 h-8 p-1 mt-5 bg-blue-sky text-black font-bold text-sm hover:bg-black"
               >
-                Start with payement
+                Read the Docs >
               </button>
-              <div class="grid grid-cols-2">
+              <div class="grid grid-cols-2 sm:grid sm:grid-cols-1">
                 <div>
                   <svg
                     width="96"
@@ -842,9 +864,12 @@
       >
         <div class="absolute h-8 w-2/5 top-0 right-0">
           <div class="bg-blue-bright/50 h-full w-full"></div>
+          <div class="bg-violet h-full w-3/4 ml-auto -mt-5"></div>
         </div>
         <div class="absolute h-8 w-2/5 bottom-0 left-0">
           <div class="bg-violet h-full w-full"></div>
+          <div class="bg-blue-bright/50 h-full w-3/4 mr-auto -mt-14"></div>
+          
         </div>
         <div class="max-w-6xl mx-auto flex flex-col skew-y-[4deg]">
           <div class="flex flex-col gap-8">
@@ -853,7 +878,7 @@
               A technology-first approach to payments<br />
             </h1>
           </div>
-          <div class="grid grid-cols-4">
+          <div class="grid grid-cols-4 sm:grid sm:grid-cols-1">
             <div>
               <img src="./assets/vectos/material.svg" class="w-20" />
               <p class="font-secondary">Close to the metal</p>
@@ -930,10 +955,12 @@
                 of dollars each year for
                 <span class="text-blue-sky">start up fortune 500s</span>
               </p>
-              <div class="grid grid-cols-4 py-20">
+              <div
+                class="grid grid-cols-4 py-20 sm:grid sm:grid-cols-1 sm:gap-4 sm:ml-4"
+              >
                 <div class="space-y-3">
                   <p
-                    class="text-white font-secondary text-2xl border-l-2 border-blue-skytext-blue-sky px-5"
+                    class="text-white font-secondary text-2xl border-l-2 border-blue-sky px-5"
                   >
                     250M+
                   </p>
@@ -946,7 +973,7 @@
                 </div>
                 <div class="space-y-3">
                   <p
-                    class="text-white font-secondary text-2xl border-l-2 border-blue-skytext-blue-sky px-5"
+                    class="text-white font-secondary text-2xl border-l-2 border-blue-sky px-5"
                   >
                     90%s
                   </p>
@@ -959,7 +986,7 @@
                 </div>
                 <div class="space-y-3">
                   <p
-                    class="text-white font-secondary text-2xl border-l-2 border-blue-skytext-blue-sky px-5"
+                    class="text-white font-secondary text-2xl border-l-2 border-blue-sky px-5"
                   >
                     135+
                   </p>
@@ -972,7 +999,7 @@
                 </div>
                 <div class="space-y-3">
                   <p
-                    class="text-white font-secondary text-2xl border-l-2 border-blue-skytext-blue-sky px-5"
+                    class="text-white font-secondary text-2xl border-l-2 border-blue-sky px-5"
                   >
                     35+
                   </p>
@@ -989,8 +1016,18 @@
         </div>
       </section>
 
-      <section class="-mt-24 py-20 max-w-6xl mx-auto flex flex-col gap-8">
-        <div class="grid grid-cols-4">
+      <section class="-mt-24  relative -skew-y-[4deg] bg-red-500">
+        <!-- <div class="absolute h-8 w-2/5 top-0 right-0">
+          <div class="bg-blue-bright/50 h-full w-full -rotate-12"></div>
+          <div class="bg-violet h-full w-3/4 ml-auto -mt-5 -rotate-12"></div>
+        </div>
+        <div class="absolute h-8 w-2/5 bottom-0 left-0">
+          <div class="bg-violet h-full w-full -rotate-12"></div>
+          <div class="bg-blue-bright/50 h-full w-3/4 mr-auto -mt-12 -rotate-12"></div>
+          
+        </div> -->
+        <div class="py-20 max-w-6xl mx-auto flex flex-col gap-8">
+        <div class="md:grid md:grid-cols-4 sm:grid sm:grid-cols-1 skew-y-[4deg]">
           <div class="col-span-2 space-y-7">
             <h2 class="font-secondary text-2xl">Ready to get started?</h2>
             <p class="font-secondary text-gray-500">
@@ -1003,21 +1040,9 @@
             </p>
             <div class="mt-7 flex gap-5">
               <button
-                class="bg-bluetext-blue text-white px-4 py-2 rounded-full text-sm font-bold flex gap-2 items-center"
+                class="rounded-2xl border w-32 h-8 p-1 mt-2 bg-blue text-white font-bold text-sm hover:bg-black"
               >
-                Start now
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  class="w-5 h-5"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
+                Start Now >
               </button>
               <button
                 class="font-bold text-sm px-4 py-2 flex gap-2 text-blue items-center"
@@ -1094,10 +1119,10 @@
             </button>
           </div>
         </div>
+      </div>
       </section>
 
       <footer
-        style="clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%)"
         class="bg-slate-200"
       >
         <div class="grid grid-cols-4 justify-center py-20 max-w-6xl mx-auto">
