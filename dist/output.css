@@ -608,6 +608,10 @@ video {
   margin-bottom: 5rem;
 }
 
+.ml-3 {
+  margin-left: 0.75rem;
+}
+
 .mt-48 {
   margin-top: 12rem;
 }
@@ -712,6 +716,10 @@ video {
   margin-right: 10rem;
 }
 
+.-mr-\[10rem\] {
+  margin-right: -10rem;
+}
+
 .flex {
   display: flex;
 }
@@ -809,12 +817,20 @@ video {
   height: 5rem;
 }
 
+.h-\[12\] {
+  height: 12;
+}
+
+.h-\[12\.5rem\] {
+  height: 12.5rem;
+}
+
 .w-full {
   width: 100%;
 }
 
-.w-\[300px\] {
-  width: 300px;
+.w-\[18\.75rem\] {
+  width: 18.75rem;
 }
 
 .w-6 {
@@ -866,6 +882,10 @@ video {
   width: 1000px;
 }
 
+.w-\[62\.5rem\] {
+  width: 62.5rem;
+}
+
 .max-w-6xl {
   max-width: 72rem;
 }
@@ -913,10 +933,6 @@ video {
 
 .grid-rows-2 {
   grid-template-rows: repeat(2, minmax(0, 1fr));
-}
-
-.flex-row {
-  flex-direction: row;
 }
 
 .flex-col {
@@ -1728,6 +1744,90 @@ body {
   .sm\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .sm\:text-\[1rem\] {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1366px) {
+  .md\:col-span-1 {
+    grid-column: span 1 / span 1;
+  }
+
+  .md\:ml-3 {
+    margin-left: 0.75rem;
+  }
+
+  .md\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .md\:-mt-24 {
+    margin-top: -6rem;
+  }
+
+  .md\:block {
+    display: block;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+
+  .md\:h-full {
+    height: 100%;
+  }
+
+  .md\:max-w-full {
+    max-width: 100%;
+  }
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .md\:overflow-x-hidden {
+    overflow-x: hidden;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
+  .lg\:ml-0 {
+    margin-left: 0px;
+  }
+
+  .lg\:flex {
+    display: flex;
+  }
+
+  .lg\:hidden {
+    display: none;
+  }
+
+  .lg\:w-full {
+    width: 100%;
+  }
+
+  .lg\:max-w-6xl {
+    max-width: 72rem;
+  }
+
+  .lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .lg\:flex-row {
+    flex-direction: row;
   }
 }
 
