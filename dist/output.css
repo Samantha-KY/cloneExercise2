@@ -584,6 +584,10 @@ video {
   grid-row: span 2 / span 2;
 }
 
+.m-0 {
+  margin: 0px;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -700,10 +704,6 @@ video {
   margin-top: -6rem;
 }
 
-.-mt-\[10rem\] {
-  margin-top: -10rem;
-}
-
 .mr-40 {
   margin-right: 10rem;
 }
@@ -728,8 +728,8 @@ video {
   height: 100%;
 }
 
-.h-\[93\.75rem\] {
-  height: 93.75rem;
+.h-\[40rem\] {
+  height: 40rem;
 }
 
 .h-6 {
@@ -811,10 +811,6 @@ video {
 
 .w-\[18\.75rem\] {
   width: 18.75rem;
-}
-
-.w-\[250rem\] {
-  width: 250rem;
 }
 
 .w-6 {
@@ -1154,6 +1150,10 @@ video {
   padding: 0.5rem;
 }
 
+.p-0 {
+  padding: 0px;
+}
+
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -1241,6 +1241,10 @@ video {
 
 .pt-48 {
   padding-top: 12rem;
+}
+
+.pt-80 {
+  padding-top: 20rem;
 }
 
 .text-center {
@@ -1419,13 +1423,13 @@ video {
 }
 
 .clip-path-mypolygon {
-  -webkit-clip-path: polygon(0 0, 0 35%, 86% 0);
-          clip-path: polygon(0 0, 0 35%, 86% 0);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 52%, 0 80%, 0 53%);
+          clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 52%, 0 80%, 0 53%);
 }
 
 .clip-path-footerpolygon {
-  -webkit-clip-path: polygon(0 15%, 100% 0%, 100% 99%, 0% 100%);
-          clip-path: polygon(0 15%, 100% 0%, 100% 99%, 0% 100%);
+  -webkit-clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0% 100%);
 }
 
 @font-face {
@@ -1516,8 +1520,8 @@ video {
     display: none;
   }
 
-  .sm\:h-\[25rem\] {
-    height: 25rem;
+  .sm\:h-\[23rem\] {
+    height: 23rem;
   }
 
   .sm\:h-full {

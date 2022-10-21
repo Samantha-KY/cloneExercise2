@@ -8,8 +8,8 @@ module.exports = {
         secondary: "secondary",
       },
       clipPath: {
-        mypolygon: "polygon(0 0, 0 35%, 86% 0)",
-        footerpolygon: "polygon(0 15%, 100% 0%, 100% 99%, 0% 100%)",
+        mypolygon: "polygon(0 0, 100% 0, 100% 50%, 100% 52%, 0 80%, 0 53%)",
+        footerpolygon: "polygon(0 15%, 100% 0%, 100% 100%, 0% 100%)",
     },
       colors: {
         "semi-gray": "#0a2540",
