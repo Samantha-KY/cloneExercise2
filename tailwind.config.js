@@ -7,6 +7,10 @@ module.exports = {
         primary: "primary",
         secondary: "secondary",
       },
+      clipPath: {
+        mypolygon: "polygon(0 0, 0 35%, 86% 0)",
+        footerpolygon: "polygon(0 15%, 100% 0%, 100% 99%, 0% 100%)",
+    },
       colors: {
         "semi-gray": "#0a2540",
         "stripe-blue": "#635bff",
@@ -23,5 +27,7 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-clip-path'),
+  ],
 };
